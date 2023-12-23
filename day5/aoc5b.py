@@ -21,7 +21,6 @@ def lookup(inputs, mapping):
                 break
 
 
-print([zip(seeds, [1] * len(seeds)), zip(seeds[0::2], seeds[1::2])])
 print(
     *[
         min(reduce(lookup, mappings, s))[0]
